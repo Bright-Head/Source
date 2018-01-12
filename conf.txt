@@ -1,0 +1,15 @@
+* get_all_profiles parameters
+KTR=27
+KTR_ST=27
+DIR_INPUT_OUT3CR=.\\input_data\\out3cr1
+N=900
+DIR_BLURRED=.\\input_data\\dir_tmp0
+DIR_OUTPUT=.\\input_data\\dir_tmp1
+KMX=2.5
+KMN=-0.2
+N2=900
+DT=1
+CNTR=1.75
+IMG_CNTR=4.5
+DNUM=282
+NDX=16
