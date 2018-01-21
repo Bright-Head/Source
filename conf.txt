@@ -1,9 +1,10 @@
 * get_all_profiles parameters
+GET_ALL_PROFILES=0
 KTR=27
 KTR_ST=27
 DIR_INPUT_OUT3CR=.\\input_data\\out3cr1
 N=900
-DIR_BLURRED=.\\input_data\\dir_tmp0
+DIR_BLURRED=.\\input_data\\dir_tmp_blr
 DIR_OUTPUT=.\\input_data\\dir_tmp1
 KMX=2.5
 KMN=-0.2
@@ -13,3 +14,16 @@ CNTR=1.75
 IMG_CNTR=4.5
 DNUM=282
 NDX=16
+* LINE_CORRECTION
+LINE_CORRECTION=1
+DIR_SHFV6B=.\\input_data\\dir_tmp1
+X0=25
+DY=11
+DYD=25
+RS=24
+DIR_LINE_CORRECTION=.\\input_data\\
+* GET_ALL_PROFILES_USE_SHIFTS
+GET_ALL_PROFILES_USE_SHIFTS=0
+DIR_BLURRED=.\\input_data\\dir_tmp00
+DIR_SHIFTS=.\\input_data\\
+DIR_OUTPUT=.\\input_data\\dir_tmp11

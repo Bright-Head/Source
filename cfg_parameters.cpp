@@ -120,6 +120,60 @@ int process_cfg_file(string cfg_file_path, CfgParametersValues& params)
 	if (it == params_map.end())
 		return 1;
 	params.DNUM = atoi(params_map[CfgParamNames.DNUM].c_str());
+	
+	// X0 - int
+	it = params_map.find(CfgParamNames.X0);
+	if (it == params_map.end())
+		return 1;
+	params.X0 = atoi(params_map[CfgParamNames.X0].c_str());
 
+	// DY - int
+	it = params_map.find(CfgParamNames.DY);
+	if (it == params_map.end())
+		return 1;
+	params.DY = atoi(params_map[CfgParamNames.DY].c_str());
+
+	// RS - int
+	it = params_map.find(CfgParamNames.RS);
+	if (it == params_map.end())
+		return 1;
+	params.RS = atoi(params_map[CfgParamNames.RS].c_str());
+
+	// DYD - int
+	it = params_map.find(CfgParamNames.DYD);
+	if (it == params_map.end())
+		return 1;
+	params.DYD = atoi(params_map[CfgParamNames.DYD].c_str());
+
+	// DIR_SHFV6B - string
+	it = params_map.find(CfgParamNames.DIR_SHFV6B);
+	if (it == params_map.end())
+		return 1;
+	params.DIR_SHFV6B = params_map[CfgParamNames.DIR_SHFV6B];
+
+	// DIR_LINE_CORRECTION - string
+	it = params_map.find(CfgParamNames.DIR_LINE_CORRECTION);
+	if (it == params_map.end())
+		return 1;
+	params.DIR_LINE_CORRECTION = params_map[CfgParamNames.DIR_LINE_CORRECTION];
+
+	// GET_ALL_PROFILES - int/bool
+	it = params_map.find(CfgParamNames.GET_ALL_PROFILES);
+	if (it == params_map.end())
+		return 1;
+	params.GET_ALL_PROFILES = atoi(params_map[CfgParamNames.GET_ALL_PROFILES].c_str());
+
+	// DIR_LINE_CORRECTION - int/bool
+	it = params_map.find(CfgParamNames.LINE_CORRECTION);
+	if (it == params_map.end())
+		return 1;
+	params.LINE_CORRECTION = atoi(params_map[CfgParamNames.LINE_CORRECTION].c_str());
+
+	// GET_ALL_PROFILES_USE_SHIFTS - int/bool
+	it = params_map.find(CfgParamNames.GET_ALL_PROFILES_USE_SHIFTS);
+	if (it == params_map.end())
+		return 1;
+	params.GET_ALL_PROFILES_USE_SHIFTS = atoi(params_map[CfgParamNames.GET_ALL_PROFILES_USE_SHIFTS].c_str());
+	
 	return 0;
 }

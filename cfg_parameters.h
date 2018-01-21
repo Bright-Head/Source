@@ -21,13 +21,24 @@ struct CfgParametersNames
 	string DT = "DT"; // 1
 	string CNTR = "CNTR"; // 1.75
 	string IMG_CNTR = "IMG_CNTR"; // 4.5
-	string DNUM = "DNUM";
-	string NDX = "NDX";
+	string DNUM = "DNUM"; //282
+	string NDX = "NDX"; //16
+	string GET_ALL_PROFILES = "GET_ALL_PROFILES";
+	string LINE_CORRECTION = "LINE_CORRECTION";
+	string DIR_SHFV6B = "DIR_SHFV6B"; //.\\input_data\\dir_tmp2
+	string X0 = "X0"; //100
+	string DY = "DY"; //7
+	string RS = "RS"; //24
+	string DYD = "DYD"; //32
+	string DIR_LINE_CORRECTION = "DIR_LINE_CORRECTION"; //".\\input_data\\"
+	string GET_ALL_PROFILES_USE_SHIFTS = "GET_ALL_PROFILES_USE_SHIFTS";
+	string DIR_SHIFTS = "DIR_SHIFTS";
 };
 
 // set default values
 struct CfgParametersValues
 {
+	int GET_ALL_PROFILES = 1;
 	string DIR_INPUT = "";
 	string DIR_OUTPUT = "";
 	int KTR = 0;
@@ -43,6 +54,18 @@ struct CfgParametersValues
 	double IMG_CNTR = 0.;
 	int DNUM = 0;
 	int NDX = 0;
+	
+	int LINE_CORRECTION = 1;
+	string DIR_SHFV6B = "";
+	int X0 = 0;
+	int DY = 0;
+	int RS = 0; // int - ??
+	int DYD = 0;
+	string DIR_LINE_CORRECTION = "";
+
+	int GET_ALL_PROFILES_USE_SHIFTS = 1;
+	string DIR_SHIFTS = "";
+
 
 };
 
